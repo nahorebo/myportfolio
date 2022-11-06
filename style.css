@@ -56,7 +56,7 @@ li {
     justify-content: center;
     overflow: hidden;
     position: absolute;
-    bottom: -50px;
+    bottom: 70px;
     margin: auto;
 }
 
@@ -68,7 +68,6 @@ li {
     position: absolute;
     overflow: hidden;
     align-items: baseline;
-
 }
 
 .redes-item1 {
@@ -198,14 +197,13 @@ li {
 }
 
 #projetos {
-    background-color: rgb(240, 243, 189);
     text-transform: uppercase;
-    height: 400px;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-row: 16px;
-    gap: 15px;
+    gap: 10px;
     max-height: 1000px;
     margin-top: 20px;
     margin-bottom: 100px;
@@ -214,28 +212,38 @@ li {
     font-size: 20px;
 }
 
-.projeto1 {
-    background-color: rgb(0, 168, 150);
-
-}
-
-.projeto2 {
-    background-color: rgb(0, 168, 150);
-
-}
-
-.projeto3 {
-    background-color: rgb(0, 168, 150);
-    ;
-
-}
-
 .img-projeto1,
 .img-projeto2,
 .img-projeto3 {
     object-fit: fill;
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.img-projeto1:hover {
+    border: 5px solid;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    opacity: .6;
+}
+
+.img-projeto2:hover {
+    border: 5px solid;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    opacity: .6;
+}
+
+.img-projeto3:hover {
+    border: 5px solid;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px;
+    opacity: .6;
+
 }
 
 .a1,
@@ -276,9 +284,13 @@ li {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .forms {
+    background-color: #00A896;
     font-size: 16px;
     height: 400px;
     width: 320px;
@@ -288,9 +300,18 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    line-height: 4;
+    line-height: 3;
     margin: auto;
     margin-bottom: 20px;
+    font-weight: bold;
+    0 2px 3px 0 rgb(0 0 0/ 60%);
+}
+
+.forms:hover {
+    border: 5px solid;
+    width: 25%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 @media screen and (max-width: 750px) {
@@ -318,17 +339,38 @@ li {
         grid-template-columns: 1fr;
     }
 
-    #formacao-title,
-    #exp-title,
-    #diadia-title {
+    .formacao-items {
+        justify-content: center;
         align-items: center;
+        display: block;
+        margin-left: -150px;
+        margin-top: 50px;
+
+    }
+
+    .exp-items {
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin-left: -150px;
+        margin-top: 50px;
+
+    }
+
+    .exp-title {}
+
+    .exp-items1 {
+        margin-left: -200px;
+        margin-top: 40px;
+        margin-bottom: 100px;
     }
 
     #falecomigo {
-        margin-top: 600px;
+        margin-top: 100px;
     }
 
     .forms {
         margin-top: -60px;
     }
+
 }
