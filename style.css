@@ -70,3 +70,54 @@ li {
     align-items: baseline;
 
 }
+.redes-item1 {
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    margin: 10px;
+
+}
+
+.redes-item2,
+.redes-item3 {
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    margin: 10px;
+}
+
+.header1 {
+    display: flex;
+    background-color: rgb(0, 168, 150);
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0/ 60%);
+}
+
+.banner {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    object-fit: fill;
+    width: 100%;
+    margin-bottom: -10%;
+}
