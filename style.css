@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
- a {
+a {
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
@@ -70,6 +70,7 @@ li {
     align-items: baseline;
 
 }
+
 .redes-item1 {
     position: relative;
     bottom: 10px;
@@ -120,4 +121,78 @@ li {
     object-fit: fill;
     width: 100%;
     margin-bottom: -10%;
+}
+
+#sobremim {
+    background-color: rgb(0, 168, 150);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobremim-titulos {
+    line-height: 0.7;
+    text-align: center;
+}
+
+.sobremim-p {
+    font-size: 20px;
+    line-height: 2;
+    font-size: 20px;
+    text-align: center;
+}
+
+#formacao {
+    background-color: rgb(240, 243, 189);
+    text-transform: uppercase;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex: column;
+    margin-top: 20px
+}
+
+.formacao-items {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formacao-title,
+#exp-title,
+#diadia-title {
+    margin-left: 30px;
+}
+
+#experiencias {
+    background-color: rgb(2, 195, 154);
+    text-transform: uppercase;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex: column;
+    margin-top: 10px
+}
+
+.exp-items {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.75;
+}
+
+.exp-items1 {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -180px;
+    line-height: 0.75;
+}
+
+.projeto-title {
+    text-align: center;
+    text-transform: uppercase;
 }
