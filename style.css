@@ -292,3 +292,43 @@ li {
     margin: auto;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 750px) {
+    .textobarra {
+        flex-direction: column;
+    }
+
+    a {
+        display: block;
+        padding: 2px;
+        margin-right: 100px;
+    }
+
+    .img-perfil1,
+    .img-perfil {
+        display: none;
+    }
+
+    .avatar-imagem {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #projetos {
+        grid-template-columns: 1fr;
+    }
+
+    #formacao-title,
+    #exp-title,
+    #diadia-title {
+        align-items: center;
+    }
+
+    #falecomigo {
+        margin-top: 600px;
+    }
+
+    .forms {
+        margin-top: -60px;
+    }
+}
