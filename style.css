@@ -304,7 +304,6 @@ li {
     margin: auto;
     margin-bottom: 20px;
     font-weight: bold;
-    0 2px 3px 0 rgb(0 0 0/ 60%);
 }
 
 .forms:hover {
@@ -356,8 +355,6 @@ li {
         margin-top: 50px;
 
     }
-
-    .exp-title {}
 
     .exp-items1 {
         margin-left: -200px;
