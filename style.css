@@ -1,0 +1,72 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textobarra {
+    text-transform: uppercase;
+    font-size: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+ a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 0px 7px #333333;
+    color: white;
+}
+
+.avatar {
+    background-color: rgb(5, 102, 141);
+    height: 92px;
+    width: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatar-imagem {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+ul {
+    padding: 14px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+.img-perfil {
+    background-color: aqua;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: -50px;
+    margin: auto;
+}
+
+.img-perfil1 {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    align-items: baseline;
+
+}
