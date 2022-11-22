@@ -177,7 +177,14 @@
       </div>
     </div>
 
-      
+    <div id="projectlist">
+<p>Conheça meu dia a dia</p>
+<ul>
+
+</ul>
+    </div>
+
+      <!----Inicio do Forms--->
 <div id="form-container">
   <div class="falecomigo">
         <p class="falecomigo-title">Fale Comigo!</p>
@@ -186,66 +193,62 @@
         <p>responderei o mais rapido possivel!</p>
       </div>
       
-      <form action="" method="post" class="form" id="form">
+      <form action="" method="post" id ="form" class="form">
+        
         <div class="form-option">
-          <label
-            >Nome:
+          <label>Nome:</label>
             <input
               type="text"
               id="username"
               name="name"
-              placeholder="Nome e Sobrenome"
-              required/>
-
-          <small>O Campo não pode estar vazio!</small>
+              placeholder="Nome e Sobrenome">
+              <i class="img-success"><img src="./imagenes/success-icon.svg" alt=""></i>
+              <i class="img-error"><img src="./imagenes/error-icon.svg" alt=""></i>
+          <small>Message de Erro</small>
         </div>
 
         <div class="form-option">
-          <label
-            >E-mail:
+          <label>E-mail:</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="usuario@email.com"
-              required
-            />
-          </label>
-          <small>O Campo não pode estar vazio!</small>
+              placeholder="usuario@email.com">
+              <i class="img-success"><img src="./imagenes/success-icon.svg" alt=""></i>
+              <i class="img-error"><img src="./imagenes/error-icon.svg" alt=""></i>
+          <small>Message de Erro</small>
         </div>
 
         <div class="form-option">
-          <label
-            >Telefono:
+          <label>Telefono:</label>
             <input
               type="text"
               id="cellphone"
               name="cellphone"
-              placeholder="0000-00000"
-              onkeypress="return onlynumber();"
-              required
-            />
-          </label>
-          <small>O Campo não pode estar vazio!</small>
+              placeholder="0000-00000">
+              <i class="img-success"><img src="./imagenes/success-icon.svg" alt=""></i>
+              <i class="img-error"><img src="./imagenes/error-icon.svg" alt=""></i>
+          <small>Message de Erro</small>
         </div>
 
         <div class="form-option">
-          <label
-            >Mensagem:
+          <label>Mensagem:</label>
             <textarea id="mensagem" name="mensagem"></textarea>
-          </label>
-          <small>O Campo não pode estar vazio!</small>
+            
+          <small>Message de Erro</small>
         </div>
 
-        <div>
+        <div class="form-option">
           <button type="submit" class="form-button">Enviar sua mensagem</button>
-        </div>
+        </div class="form-option">
         <div>
           <button type="reset" class="form-button">Limpar os dados</button>
 
         </div>
       </form>
       </div>
+<!----Termino do Forms--->
+
 
     <footer id="footer">
       <p>Pode me seguir nas redes sociais:</p>
