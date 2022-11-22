@@ -12,7 +12,6 @@ function getApiGitHub() {
       var data = await res.json()
 
       data.map(item => {
-        let li = document.createElement('li')
         let a  = document.createElement('a')
 
         list.innerHTML = `
