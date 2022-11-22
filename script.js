@@ -1,3 +1,33 @@
+//Consultar Repositorios do Git 
+const list = document.querySelector('#list1');
+
+function getApiGitHub() {
+  fetch('https://api.github.com/users/nahorebo/repos')
+    .then(async res => {
+
+      if (!res.ok) {
+        throw new Error(res.status)
+      }
+
+      var data = await res.json()
+
+      data.map(item => {
+        let li = document.createElement('li')
+        let a  = document.createElement('a')
+
+        list.innerHTML = `
+      <a href="${item.html_url}"> ${item.name.toUpperCase()}</a>
+      `
+        list.appendChild(a)
+      })
+    }).catch(e => console.log(e))
+}
+getApiGitHub()
+//finalização do API
+
+
+
+//formulario validado
 const form = document.getElementById('form')
 const username = document.getElementById('username')
 const email = document.getElementById('email')
@@ -27,7 +57,7 @@ function checkInputs() {
   if (emailValue === '') {
     errorValidation(email, 'É necessário informar seu e-mail')
   }
-  else if(emailValue.search(`@`) == -1){
+  else if (emailValue.search(`@`) == -1) {
     errorValidation(email)
   }
   else {

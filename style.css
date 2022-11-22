@@ -273,39 +273,43 @@ li {
   text-transform: uppercase;
   text-align: center;
 }
-#projectlist {
-font-size: 10px;
-background-color: #F0F3BD ;
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-transform: uppercase;
-line-height: 3;
-word-break: break-all;
-}
 
-#projectlist li{
+#projectlist {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  align-items: center;
+  font-size: 10px;
+  background-color: #F0F3BD;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 100%;
+  padding: 5px;
+
+}
+
+#projectlist a {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #05668D;
 }
 
 /*Estilização do Forms*/
 #form-container {
- background-color: #F0F3BD;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80ex;
-    width: 400px;
-    border-radius: 30px;
-    margin: auto;
-    text-transform: uppercase;
-    border: solid 1px;
+  background-color: #80ced7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80ex;
+  width: 400px;
+  border-radius: 30px;
+  margin: auto;
+  text-transform: uppercase;
+  border: solid 1px;
 }
+
 .falecomigo-title {
   font-size: 35px;
   text-transform: uppercase;
@@ -324,20 +328,22 @@ word-break: break-all;
   margin-bottom: 500px;
   line-height: 0;
 }
-.form{
+
+.form {
   margin-top: 180px;
 }
+
 .form-option {
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .form-option label {
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -345,24 +351,26 @@ word-break: break-all;
   margin-top: -60px;
 }
 
-.form-option input{
+.form-option input {
   width: 150%;
   height: 100%;
   border-radius: 30px;
 }
 
-.form-option textarea{
+.form-option textarea {
   width: 160%;
   height: 100px;
   border-radius: 30px;
 }
 
 #form-container:hover,
-.form-option input:hover, .form-option textarea:hover
-, .form button:hover{
+.form-option input:hover,
+.form-option textarea:hover,
+.form button:hover {
   transition: transform 0.2s;
   box-shadow: 5px 5px 5px #6f7364;
 }
+
 .form-option.error i.img-error {
   visibility: visible;
 }
@@ -370,19 +378,24 @@ word-break: break-all;
 .form-option.success i.img-success {
   visibility: visible;
 }
+
 .form-option i {
   position: absolute;
   margin-left: 280px;
   margin-top: -88px;
   visibility: hidden;
 }
-.form-option.success input, .form-option.success textarea {
+
+.form-option.success input,
+.form-option.success textarea {
   border: 2px solid #4ECA64;
 }
 
-.form-option.error input, .form-option.error textarea {
+.form-option.error input,
+.form-option.error textarea {
   border: 2px solid #DB5A5A;
 }
+
 .form-option.error small {
   visibility: visible;
 }
@@ -400,7 +413,7 @@ word-break: break-all;
 }
 
 .form button {
-  background-color: #f2b5d4;
+  background-color: #ef476f;
   font-weight: bold;
   width: 200px;
   text-transform: uppercase;
@@ -409,6 +422,7 @@ word-break: break-all;
   margin-top: 10px;
 
 }
+
 /*Final de Estilização*/
 
 #footer {
